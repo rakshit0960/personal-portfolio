@@ -3,7 +3,7 @@ import SectionWrapper from "./SectionWrapper";
 export default function AboutMeSection() {
   return (
     <SectionWrapper name="About">
-        <div>hello world</div>
+        <div className='grid grid-cols-3 gap-4'></div>
     </SectionWrapper>
   )
 }
