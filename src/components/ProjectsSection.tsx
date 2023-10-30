@@ -1,11 +1,10 @@
 import ProjectsList from "./ProjectsList"
+import SectionWrapper from "./SectionWrapper"
 
 export default function ProjectsSection() {
   return (
-    <section className="min-h-screen flex flex-col justify-between py-10 px-8">
-      <code className="text-4xl">{'<Projects>'}</code>
+    <SectionWrapper name="Projects">
         <ProjectsList />
-      <code className="text-4xl">{'</Projects>'}</code>
-    </section>
+    </SectionWrapper>
   )
 }
