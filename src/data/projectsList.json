@@ -1,0 +1,44 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "preview": "",
+            "name": "ticTacToeAI",
+            "description": "tic tac toe ai using minimax algorithm",
+            "repositoryLink": "google.com",
+            "HostedLink": "google.com"
+        },
+        {
+            "id": 2,
+            "preview": "",
+            "name": "SortingAlgoVisualizer",
+            "description": "Sorting Algorithm Visualizer using ReactJs",
+            "repositoryLink": "google.com",
+            "HostedLink": "google.com"
+        },
+        {
+            "id": 3,
+            "preview": "",
+            "name": "project name",
+            "description": "this is the project description",
+            "repositoryLink": "google.com",
+            "HostedLink": "google.com"
+        },
+        {
+            "id": 4,
+            "preview": "",
+            "name": "project name",
+            "description": "this is the project description",
+            "repositoryLink": "google.com",
+            "HostedLink": "google.com"
+        },
+        {
+            "id": 5,
+            "preview": "",
+            "name": "project name",
+            "description": "this is the project description",
+            "repositoryLink": "google.com",
+            "HostedLink": "google.com"
+        }
+    ]
+}
