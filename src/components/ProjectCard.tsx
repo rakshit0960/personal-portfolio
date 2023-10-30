@@ -1,11 +1,9 @@
 import { ProjectObj } from "../data/projectObjectInterface";
+import CardWrapper from "./CardWrapper";
 
 export default function ProjectCard({ project }: { project: ProjectObj }) {
   return (
-    <div className="border-2 p-6">
-      <code className="text-2xl">{"<project>"}</code>
-      
-      <div className="mx-6 my-4">  
+    <CardWrapper name={'Project'}>
         <div className="aspect-16/11 w-full border-2">
           <img src={project.preview}/>
         </div>
@@ -17,10 +15,6 @@ export default function ProjectCard({ project }: { project: ProjectObj }) {
             <a className="border-2 px-4 py-2" href={project.repositoryLink}>GitHub</a>
             <a className="border-2 px-4 py-2" href={project.HostedLink}>Demo</a>
         </div>
-
-      </div>
-
-      <code className="text-2xl">{"</project>"}</code>
-    </div>
+    </CardWrapper>
   );
 }
