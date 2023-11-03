@@ -9,7 +9,7 @@ const skillsList: ISkill[] = data.skills;
 export default function SkillsSection() {
   return (
     <SectionWrapper name='Tech Stack'>
-        {skillsList.map(skill => <SkillComponent skill={skill} />)}
+        {skillsList.map(skill => <SkillComponent skill={skill} key={skill.id}/>)}
     </SectionWrapper>
   )
 }

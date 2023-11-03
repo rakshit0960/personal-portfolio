@@ -1,16 +1,34 @@
 {
     "skills": [
         {
+            "id": 1,
             "name": "HTML",
             "level": 75
         },
         {
-            "name": "HTML",
+            "id": 2,
+            "name": "CSS",
             "level": 25
         },
         {
-            "name": "HTML",
+            "id": 3,
+            "name": "TypeScript",
+            "level": 25
+        },
+        {
+            "id": 4,
+            "name": "ReactJs",
             "level": 30
+        },
+        {
+            "id": 5,
+            "name": "Tailwind",
+            "level": 25
+        },
+        {
+            "id": 6,
+            "name": "NodeJS",
+            "level": 25
         }
     ]
 }

@@ -3,7 +3,7 @@ import ContactSection from "../components/ContactSection";
 import PageHeader from "../components/PageHeader";
 import ProjectsSection from "../components/ProjectsSection";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <PageHeader />

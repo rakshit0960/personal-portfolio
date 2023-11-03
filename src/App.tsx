@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import HomePage from './pages/HomePage'
 import SectionWrapper from './components/SectionWrapper'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
       <SectionWrapper name='App'>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/' element={<HomePage />} />
           </Routes>
         </SectionWrapper>
     </>
