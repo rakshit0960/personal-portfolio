@@ -1,24 +1,14 @@
+import HomeSection from "./HomeSection";
 import SectionWrapper from "./SectionWrapper";
+import SkillsSection from "./SkillsSection";
 
 export default function AboutMeSection() {
   return (
-    <SectionWrapper name="AboutMe">
-      <SectionWrapper name="name">
-        <div className="text-4xl">Rakshit</div>
+    <div id="aboutSection">
+      <SectionWrapper name="About">
+          <HomeSection />
+          <SkillsSection />
       </SectionWrapper>
-      <SectionWrapper name="Skills">
-          <div className="grid grid-cols-4 place-content-baseline">
-              <SectionWrapper name="frontEnd">
-                <div>hello</div>
-              </SectionWrapper>
-              <SectionWrapper name="Backend">
-                <div>hello</div>
-              </SectionWrapper>
-          </div>
-      </SectionWrapper>
-      <SectionWrapper name="Education">
-          <div></div>
-      </SectionWrapper>
-    </SectionWrapper>
-  )
+    </div>
+  );
 }

@@ -1,4 +1,4 @@
-export interface ProjectObj {
+export interface IProject {
     id: number
     preview: string
     name: string

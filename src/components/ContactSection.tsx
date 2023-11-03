@@ -1,9 +1,9 @@
-import SectionWrapper from './SectionWrapper'
+import SectionWrapper from "./SectionWrapper";
 
 export default function ContactSection() {
   return (
-    <SectionWrapper name='Contact'>
-        
-    </SectionWrapper>
-  )
+    <div id="ContactSection">
+      <SectionWrapper name="Contact">contact section</SectionWrapper>
+    </div>
+  );
 }

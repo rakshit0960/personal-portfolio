@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       <SectionWrapper name='App'>
-        <Routes>
-          <Route path='/' element={<Home />} />
-        </Routes>
-      </SectionWrapper>
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </SectionWrapper>
     </>
   )
 }

@@ -1,7 +1,7 @@
-import { ProjectObj } from "../data/projectObjectInterface";
+import { IProject } from "../data/projectObjectInterface";
 import CardWrapper from "./CardWrapper";
 
-export default function ProjectCard({ project }: { project: ProjectObj }) {
+export default function ProjectCard({ project }: { project: IProject }) {
   return (
     <CardWrapper name={'Project'}>
         <div className="aspect-16/11 w-full border-2">
