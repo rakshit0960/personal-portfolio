@@ -1,26 +1,30 @@
 import SectionWrapper from "./SectionWrapper";
-import { FormEventHandler, useRef } from "react";
+import { FormEventHandler, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import {ImSpinner2 } from "react-icons/im";
 
 export default function ContactForm() {
   const formRef = useRef<HTMLFormElement>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const sendEmail: FormEventHandler = async (e) => {
     e.preventDefault();
     if (formRef.current == null) return;
 
+    setIsLoading(true);
     try {
-      await emailjs.sendForm(
-          import.meta.env.VITE_EMAILJS_SERVICE_ID,
-          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-          formRef.current,
-          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-        )
-    } catch(error) {
-        console.log('error sending message ', error);
+      const response = await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+      if (response.status != 200) throw new Error();
+    } catch (error) {
+      console.log("error sending message ", error);
+    } finally {
+      setIsLoading(false);
     }
-
-
   };
 
   return (
@@ -75,12 +79,24 @@ export default function ContactForm() {
             className="border-2 resize-none p-2 w-full font-semibold focus:outline-none focus:ring-1 focus:ring-black"
           ></textarea>
         </label>
-        <button
-          type="submit"
-          className="border-2 p-2 mt-4 rounded-xl hover:border-gray-500 focus:outline-none focus:ring-1 focus:ring-black"
-        >
-          Send
-        </button>
+
+        {!isLoading ? (
+          <button
+            type="submit"
+            className="border-2 p-2 mt-4 rounded-xl hover:border-gray-500 focus:outline-none focus:ring-1 focus:ring-black"
+          >
+            Send
+          </button>
+        ) : (
+          <button
+            disabled
+            type="submit"
+            className="border-2 p-2 mt-4 rounded-xl focus:outline-none focus:ring-1 focus:ring-black grid place-content-center"
+          >
+            <ImSpinner2 className="animate-spin" size='1.55em'/>
+          </button>
+        )}
+
       </form>
     </SectionWrapper>
   );
