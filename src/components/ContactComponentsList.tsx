@@ -8,10 +8,10 @@ export default function ContactComponentsList() {
   return (
     <IconContext.Provider value={{color: 'black', size: '1.2em'}}>
         <div className="grid gap-16">
-            <ContactComponent icon={<AiOutlineMail />} info="rakshit0960@gmail.com" />
-            <ContactComponent icon={<BsTelephone />} info="+919701011814" />
-            <ContactComponent icon={<FaGithub />} info="github.com/rakshit0960" />
-            <ContactComponent icon={<FaLinkedin />} info="linkedIn" />
+            <ContactComponent icon={<AiOutlineMail />} info="rakshit0960@gmail.com" link={'mailto:rakshit0960@gmail.com'} />
+            <ContactComponent icon={<BsTelephone />} info="+919701011814" link={'tel:+919701011814'} />
+            <ContactComponent icon={<FaGithub />} info="github.com/rakshit0960" link={'https://github.com/rakshit0960'} />
+            <ContactComponent icon={<FaLinkedin />} info="linkedIn" link={'https://linkedin.com/in/rakshit-mehta0960'} />
         </div>
     </IconContext.Provider>
   );
