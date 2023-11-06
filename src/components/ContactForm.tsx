@@ -20,11 +20,13 @@ export default function ContactForm() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
       if (response.status != 200) throw new Error();
+      alert('message sent')
     } catch (error) {
       console.log("error sending message ", error);
     } finally {
       setIsLoading(false);
     }
+    
   };
 
   return (
