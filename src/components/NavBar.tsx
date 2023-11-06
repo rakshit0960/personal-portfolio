@@ -3,7 +3,7 @@ import resume from "../assets/documents/resume.pdf";
 export default function NavBar() {
   return (
     <nav>
-      <div className="grid grid-cols-4 place-content-center place-items-center border-2 border-black h-20 text-2xl select-none">
+      <div className="rounded-md grid grid-cols-4 place-content-center place-items-center border-2 border-black h-20 text-2xl select-none">
         <a className="hover:font-semibold" href="#aboutSection">
           About
         </a>
