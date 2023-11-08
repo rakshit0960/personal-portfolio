@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa6";
-import { IProject } from "../data/projectObjectInterface";
+import { IProject } from "../utils/interfaces";
 import CardWrapper from "./CardWrapper";
 import { BsLink45Deg } from "react-icons/bs";
 

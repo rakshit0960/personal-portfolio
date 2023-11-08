@@ -1,4 +1,4 @@
-import { ISkill } from "../data/SkillObjectInterface";
+import { ISkill } from "../utils/interfaces";
 import SingleComponentWrapper from "./SingleComponentWrapper";
 
 export default function SkillComponent({ skill }: { skill: ISkill }) {

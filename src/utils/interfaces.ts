@@ -6,3 +6,9 @@ export interface IProject {
     repositoryLink: string
     HostedLink: string
 } 
+
+export interface ISkill {
+    id: number
+    name: string
+    level: number
+}

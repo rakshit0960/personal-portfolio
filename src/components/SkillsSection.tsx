@@ -1,4 +1,4 @@
-import { ISkill } from "../data/SkillObjectInterface"; 
+import { ISkill } from "../utils/interfaces"; 
 import data from '../data/skillsList.json'
 import SectionWrapper from "./SectionWrapper";
 import SkillComponent from "./SkillComponent";

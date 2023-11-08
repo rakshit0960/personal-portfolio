@@ -1,4 +1,4 @@
-import { IProject } from '../data/projectObjectInterface'
+import { IProject } from '../utils/interfaces'
 import data from '../data/projectsList.json';
 import ProjectCard from './ProjectCard';
 
