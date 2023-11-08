@@ -2,43 +2,19 @@
     "projects": [
         {
             "id": 1,
-            "preview": "",
+            "preview": "https://github.com/rakshit0960/TicTacToe-AI/blob/main/ScreenShort/Hover.PNG?raw=true",
             "name": "ticTacToeAI",
             "description": "tic tac toe ai using minimax algorithm",
-            "repositoryLink": "google.com",
-            "HostedLink": "google.com"
+            "repositoryLink": "https://github.com/rakshit0960/TicTacToe-AI",
+            "HostedLink": "https://luxury-capybara-27a3e2.netlify.app/"
         },
         {
             "id": 2,
-            "preview": "",
+            "preview": "https://github.com/rakshit0960/Sorting-Algorithm-Visualizer/blob/main/screenShots/Screenshot2.png?raw=true",
             "name": "SortingAlgoVisualizer",
             "description": "Sorting Algorithm Visualizer using ReactJs",
-            "repositoryLink": "google.com",
-            "HostedLink": "google.com"
-        },
-        {
-            "id": 3,
-            "preview": "",
-            "name": "project name",
-            "description": "this is the project description",
-            "repositoryLink": "google.com",
-            "HostedLink": "google.com"
-        },
-        {
-            "id": 4,
-            "preview": "",
-            "name": "project name",
-            "description": "this is the project description",
-            "repositoryLink": "google.com",
-            "HostedLink": "google.com"
-        },
-        {
-            "id": 5,
-            "preview": "",
-            "name": "project name",
-            "description": "this is the project description",
-            "repositoryLink": "google.com",
-            "HostedLink": "google.com"
+            "repositoryLink": "https://github.com/rakshit0960/Sorting-Algorithm-Visualizer",
+            "HostedLink": "https://snazzy-praline-f2e84a.netlify.app/"
         }
     ]
 }
