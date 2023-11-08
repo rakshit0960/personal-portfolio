@@ -4,9 +4,11 @@ import SingleComponentWrapper from "./SingleComponentWrapper";
 export default function PageHeader() {
   return (
     <>
-      <SingleComponentWrapper name="Nav">
-        <NavBar />
-      </SingleComponentWrapper>
+      <div className="ml-8">
+        <SingleComponentWrapper name="Nav">
+          <NavBar />
+        </SingleComponentWrapper>
+      </div>
     </>
-  )
+  );
 }
