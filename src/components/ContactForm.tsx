@@ -44,7 +44,7 @@ export default function ContactForm() {
               name="firstName"
               required={true}
               placeholder="firstName"
-              className="border-2 p-2 font-semibold w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent focus:bg-transparent"
+              className="border-2 p-2 font-semibold w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:focus:bg-transparent"
             />
           </label>
           <label>
@@ -54,7 +54,7 @@ export default function ContactForm() {
               name="lastName"
               required={true}
               placeholder="lastName"
-              className="border-2 p-2 font-semibold w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent focus:bg-transparent"
+              className="border-2 p-2 font-semibold w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:focus:bg-transparent"
             />
           </label>
         </div>
@@ -67,7 +67,7 @@ export default function ContactForm() {
             required={true}
             placeholder="Email"
             autoComplete="email"
-            className="border-2 p-2 font-semibold w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent focus:bg-transparent"
+            className="border-2 p-2 font-semibold w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:focus:bg-transparent"
           />
         </label>
         <label>

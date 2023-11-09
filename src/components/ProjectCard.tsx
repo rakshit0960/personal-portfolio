@@ -6,7 +6,7 @@ import { BsLink45Deg } from "react-icons/bs";
 export default function ProjectCard({ project }: { project: IProject }) {
   return (
     <CardWrapper name={'Project'}>
-        <div className="aspect-video w-full border-2 border-dark-border-teal rounded-lg overflow-hidden">
+        <div className="aspect-video w-full border-2 dark:border-dark-border-teal rounded-lg overflow-hidden">
           <img className="object-cover h-full w-full" src={project.preview}/>
         </div>
 
@@ -16,8 +16,8 @@ export default function ProjectCard({ project }: { project: IProject }) {
         </div>
 
         <div className="flex justify-between my-5">
-            <a className="border-[1px] border-[#D3D3D3] px-10 py-2 rounded-lg flex items-center bg-gray-700 dark:bg-transparent text-white hover:bg-black hover:border-black" href={project.repositoryLink} target="_blank">
-              <FaGithub size='1.3em'color={'#fff'}/>
+            <a className="border-[1px] border-[#D3D3D3] px-10 py-2 rounded-lg flex items-center bg-gray-700 dark:bg-transparent text-white hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black" href={project.repositoryLink} target="_blank">
+              <FaGithub size='1.3em'/>
               <div className="px-2">GitHub</div>
             </a>
             <a className="border-[1px] border-[#D3D3D3] px-10 py-2 rounded-lg flex items-center hover:border-black dark:hover:bg-white dark:hover:text-black" href={project.HostedLink} target="_blank">

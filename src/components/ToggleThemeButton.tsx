@@ -12,9 +12,9 @@ export default function ToggleThemeButton() {
 
   return (
     <IconContext.Provider value={{color: darkTheme ? 'white' : 'black', size: '1.6em'}}>
-        <div onClick={toggleTheme} className="cursor-pointer border-2 border-gray-400 rounded-lg p-2 hover:border-black dark:hover:white dark:hover:border-white">
+        <button onClick={toggleTheme} className="w-20 ml-2 aspect-square border-black grid place-content-center border-2 rounded-lg dark:hover:white dark:border-[#D3D3D3] dark:hover:border-white">
             {darkTheme ? <BsMoon /> : <BsSun /> }
-        </div>
+        </button>
     </IconContext.Provider>
   )
 }
