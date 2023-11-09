@@ -34,9 +34,9 @@ export default function ContactForm() {
       <form
         onSubmit={sendEmail}
         ref={formRef}
-        className="grid grid-flow-row gap-4"
+        className="grid grid-flow-row gap-y-8"
       >
-        <div className="grid grid-flow-col gap-4">
+        <div className="grid lg:grid-flow-col gap-4">
           <label>
             First Name <br />
             <input

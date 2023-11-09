@@ -15,12 +15,12 @@ export default function ProjectCard({ project }: { project: IProject }) {
           <p className="text-lg">{project.description}</p>
         </div>
 
-        <div className="flex justify-between my-5">
-            <a className="border-[1px] border-[#D3D3D3] px-10 py-2 rounded-lg flex items-center bg-gray-700 dark:bg-transparent text-white hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black" href={project.repositoryLink} target="_blank">
+        <div className="flex justify-between my-5 flex-col 2xl:flex-row">
+            <a className="mb-2 2xl:mb-0 border-[1px] border-[#D3D3D3] px-6 py-2 rounded-lg flex items-center bg-gray-700 dark:bg-transparent text-white hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black" href={project.repositoryLink} target="_blank">
               <FaGithub size='1.3em'/>
               <div className="px-2">GitHub</div>
             </a>
-            <a className="border-[1px] border-[#D3D3D3] px-10 py-2 rounded-lg flex items-center hover:border-black dark:hover:bg-white dark:hover:text-black" href={project.HostedLink} target="_blank">
+            <a className="border-[1px] border-[#D3D3D3] px-6 py-2 rounded-lg flex items-center hover:border-black dark:hover:bg-white dark:hover:text-black" href={project.HostedLink} target="_blank">
               <BsLink45Deg size='1.7em'/>
               <div className="px-2">Demo</div>
             </a>
