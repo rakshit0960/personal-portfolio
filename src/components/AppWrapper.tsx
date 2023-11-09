@@ -1,8 +1,11 @@
 import SectionWrapper from "./SectionWrapper";
+interface Prop {
+    children: React.JSX.Element | React.JSX.Element[] | string
+}
 
-export default function AppWrapper({ children }: { children: React.JSX.Element | React.JSX.Element[] | string }) {
+export default function AppWrapper({ children }: Prop) {
     return (
-        <div>
+        <div className="dark:bg-dark-bg dark:text-dark-text">
             <div className="lg:hidden">
                 {children}
             </div>

@@ -6,7 +6,7 @@ interface Prop {
 }
 export default function SectionWrapper({children, name}: Prop) {
   return (
-    <section className="relative flex flex-col justify-between py-7 pl-6 dark:bg-dark-bg dark:text-dark-text">
+    <section className="relative flex flex-col justify-between py-7 pl-6">
       <code className="text-3xl dark:text-sage-green">{`<${name}>`}</code>
 
       <div className="flex jus">
