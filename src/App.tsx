@@ -5,7 +5,7 @@ import { ThemeContext } from './components/contexts/ThemeContext'
 import { useState } from 'react'
 
 function App() {
-  const [darkTheme, setDarkTheme] = useState(false)
+  const [darkTheme, setDarkTheme] = useState<boolean>(false)
 
   return (
     <div className={darkTheme ? "dark" : ""}>

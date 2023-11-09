@@ -4,30 +4,30 @@ import emailjs from "@emailjs/browser";
 import {ImSpinner2 } from "react-icons/im";
 
 export default function ContactForm() {
-  const formRef = useRef<HTMLFormElement>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+    const formRef = useRef<HTMLFormElement>(null);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const sendEmail: FormEventHandler = async (e) => {
-    e.preventDefault();
-    if (formRef.current == null) return;
+    const sendEmail:FormEventHandler = async function(e) {
+      e.preventDefault();
+      if (formRef.current == null) return;
 
-    setIsLoading(true);
-    try {
-      const response = await emailjs.sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      );
-      if (response.status != 200) throw new Error();
-      alert('message sent')
-    } catch (error) {
-      console.log("error sending message ", error);
-    } finally {
-      setIsLoading(false);
-    }
-    
-  };
+      setIsLoading(true);
+      try {
+        const response = await emailjs.sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        );
+        if (response.status != 200) throw new Error();
+        alert('message sent')
+      } catch (error) {
+        console.log("error sending message ", error);
+      } finally {
+        setIsLoading(false);
+      }
+      
+    };
 
   return (
     <SectionWrapper name="Form">
