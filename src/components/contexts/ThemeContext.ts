@@ -8,10 +8,10 @@ interface Theme {
 export const ThemeContext = createContext<Theme>({ darkTheme: undefined, setDarkTheme: undefined });
 
 export function useThemeContext() {
-    const {darkTheme: theme, setDarkTheme: setTheme} = useContext(ThemeContext)
+    const {darkTheme, setDarkTheme} = useContext(ThemeContext)
     
-    if (theme === undefined || setTheme === undefined) 
+    if (darkTheme === undefined || setDarkTheme === undefined) 
         throw new Error('Theme Cannot contain undefined field')
 
-    return {theme, setTheme};
+    return {darkTheme, setDarkTheme};
 }

@@ -7,7 +7,7 @@ interface Prop {
 
 export default function ContactComponent({icon, info, link}: Prop) {
   return (
-    <a href={link} target="_blank" className="px-6 py-4 border-2 rounded-2xl cursor-pointer hover:border-gray-600 ">
+    <a href={link} target="_blank" className="px-6 py-4 border-2 rounded-2xl cursor-pointer hover:border-gray-600 dark:border-gray-400 dark:hover:border-white dark:text-white">
       <code className="flex items-center text-2xl">
         {`<`}
             <div className="pl-3">{icon}</div> 
