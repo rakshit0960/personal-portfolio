@@ -4,7 +4,7 @@ import DownloadButton from "./DownloadButton";
 export default function NavBar() {
   return (
     <nav>
-      <div className="rounded-md grid grid-cols-4 place-content-center place-items-center border-2 dark:border-sage-green border-black h-20 text-2xl select-none">
+      <div className="rounded-md grid grid-cols-4 place-content-center place-items-center border-2 dark:border-light-coral border-black h-20 text-2xl select-none">
         <NavLink name="About" href="#aboutSection" />
         <NavLink name="Projects" href="#ProjectsSection" />
         <NavLink name="Contact" href="#ContactSection" />

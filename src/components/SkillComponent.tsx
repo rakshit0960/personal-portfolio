@@ -5,9 +5,9 @@ export default function SkillComponent({ skill }: { skill: ISkill }) {
   return (
     <SingleComponentWrapper name={skill.name} fontSize="1.6rem">
       <div className="flex items-center">
-        <div className="border-2 h-3 w-full">
+        <div className="border-2 h-3 w-full dark:border-dark-border-blue">
           <div
-            className="bg-gray-600 h-full"
+            className="bg-gray-600 dark:bg-dark-border-teal h-full"
             style={{ width: `${skill.level}%` }}
           ></div>
         </div>

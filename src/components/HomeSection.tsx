@@ -7,7 +7,7 @@ export default function HomeSection() {
           Hi, i am Rakshit Mehta, A Passionate MEARN stack <br />  developer based in India
         </div>
       </div>
-      <div className="aspect-square w-72 rounded-full border-2">
+      <div className="aspect-square w-72 rounded-full border-[1px]">
         <img src="" alt="" />
       </div>
     </div>
