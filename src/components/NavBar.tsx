@@ -9,7 +9,7 @@ export default function NavBar() {
         <NavLink name="About" href="#aboutSection" />
         <NavLink name="Projects" href="#ProjectsSection" />
         <NavLink name="Contact" href="#ContactSection" />
-        <DownloadButton filePath={resume} fileName="RESUME-Rakshit_Mehta-PDF" name="Resume" />
+        <DownloadButton filePath={resume} fileName="RESUME-Rakshit-Mehta" name="Resume" />
       </div>
       <ToggleThemeButton /> 
     </nav>
