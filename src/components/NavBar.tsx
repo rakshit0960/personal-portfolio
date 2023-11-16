@@ -4,8 +4,8 @@ import DownloadButton from "./DownloadButton";
 import ToggleThemeButton from "./ToggleThemeButton";
 export default function NavBar() {
   return (
-    <nav className="flex">
-      <div className="w-full rounded-md grid grid-cols-4 place-content-center place-items-center border-2 dark:border-light-coral border-black h-20 text-2xl select-none">
+    <nav className="flex mt-4 lg:mt-0">
+      <div className="py-2 w-full h-full gap-1 rounded-md grid lg:grid-cols-4 place-content-center place-items-center border-2 dark:border-light-coral border-black lg:h-20 text-2xl select-none">
         <NavLink name="About" href="#aboutSection" />
         <NavLink name="Projects" href="#ProjectsSection" />
         <NavLink name="Contact" href="#ContactSection" />

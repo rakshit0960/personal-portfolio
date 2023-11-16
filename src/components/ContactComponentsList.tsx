@@ -9,7 +9,7 @@ export default function ContactComponentsList() {
   const { darkTheme } = useThemeContext()
   return (
     <IconContext.Provider value={{color: darkTheme ? 'white' : 'black', size: '1.2em'}}>
-        <div className="grid gap-12">
+        <div className="grid lg:gap-12 gap-4">
             <ContactComponent icon={<AiOutlineMail />} info="rakshit0960@gmail.com" link={'mailto:rakshit0960@gmail.com'} />
             <ContactComponent icon={<BsTelephone />} info="+919701011814" link={'tel:+919701011814'} />
             <ContactComponent icon={<FaGithub />} info="github.com/rakshit0960" link={'https://github.com/rakshit0960'} />

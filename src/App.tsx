@@ -8,7 +8,7 @@ function App() {
   const [darkTheme, setDarkTheme] = useState<boolean>(false)
 
   return (
-    <div className={darkTheme ? "dark" : ""}>
+    <div className= {darkTheme ? "dark" : ""}>
       <ThemeContext.Provider value={{ darkTheme, setDarkTheme }}>
         <AppWrapper>
           <Routes>
