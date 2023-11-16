@@ -3,7 +3,7 @@ import SingleComponentWrapper from "./SingleComponentWrapper";
 
 export default function SkillComponent({ skill }: { skill: ISkill }) {
   return (
-    <SingleComponentWrapper name={skill.name} fontSize="1.6rem">
+    <SingleComponentWrapper name={skill.name}>
       <div className="flex items-center">
         <div className="border-2 h-3 w-full dark:border-dark-border-blue">
           <div
