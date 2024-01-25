@@ -13,22 +13,32 @@
         {
             "id": 3,
             "name": "TypeScript",
-            "level": 65
+            "level": 85
         },
         {
             "id": 4,
             "name": "ReactJs",
-            "level": 60
+            "level": 80
         },
         {
             "id": 5,
             "name": "Tailwind",
-            "level": 60
+            "level": 70
         },
         {
             "id": 6,
             "name": "NodeJS",
+            "level": 70
+        },
+        {
+            "id": 7,
+            "name": "docker",
             "level": 50
+        }, 
+        {
+            "id": 8,
+            "name": "AWS",
+            "level": 40
         }
     ]
 }
