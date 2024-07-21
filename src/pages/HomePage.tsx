@@ -15,7 +15,10 @@ export default function HomePage() {
         projectsSectionRef={ProjectsSectionRef}
         contactSectionRef={contactSectionRef}
       />
-      <AboutMeSection ref={aboutMeSectionRef} />
+      <AboutMeSection
+        ref={aboutMeSectionRef}
+        contactSectionRef={contactSectionRef}
+      />
       <ProjectsSection ref={ProjectsSectionRef} />
       <ContactSection ref={contactSectionRef} />
     </>

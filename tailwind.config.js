@@ -24,6 +24,9 @@ export default {
       },
       fontFamily: {
         "mono-code": ["ui-monospace", 'Cascadia Code', 'Source Code Pro', "Menlo", "Consolas", 'DejaVu Sans Mono', "monospace"],
+      },
+      boxShadow: {
+        "behind-shadow": "24px 24px 0px 0px rgba(0,0,0,1);",
       }
     },
   },

@@ -1,14 +1,21 @@
 import { forwardRef } from "react";
-import HomeSection from "./HomeSection";
+import IntroductionSection from "./IntroductionSection";
 import SectionWrapper from "./SectionWrapper";
 import SkillsSection from "./SkillsSection";
 
-const AboutMeSection = forwardRef<HTMLDivElement, unknown>(function (_, ref) {
+type Prop = {
+  contactSectionRef: React.MutableRefObject<HTMLDivElement | null>;
+};
+
+const AboutMeSection = forwardRef<HTMLDivElement, Prop>(function (
+  { contactSectionRef },
+  ref
+) {
   return (
     <div ref={ref}>
       <SectionWrapper name="About">
-          <HomeSection />
-          <SkillsSection />
+        <IntroductionSection contactSectionRef={contactSectionRef} />
+        <SkillsSection />
       </SectionWrapper>
     </div>
   );

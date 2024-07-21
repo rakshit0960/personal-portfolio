@@ -8,37 +8,37 @@
         {
             "id": 2,
             "name": "CSS",
-            "level": 70
+            "level": 90
         },
         {
             "id": 3,
             "name": "TypeScript",
-            "level": 85
+            "level": 90
         },
         {
             "id": 4,
             "name": "ReactJs",
-            "level": 80
+            "level": 90
         },
         {
             "id": 5,
             "name": "Tailwind",
-            "level": 70
+            "level": 80
         },
         {
             "id": 6,
             "name": "NodeJS",
-            "level": 70
+            "level": 90
         },
         {
             "id": 7,
             "name": "docker",
-            "level": 50
+            "level": 30
         }, 
         {
             "id": 8,
             "name": "AWS",
-            "level": 40
+            "level": 30
         }
     ]
 }
