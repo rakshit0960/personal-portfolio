@@ -23,11 +23,11 @@ export default function IntroductionSection({ contactSectionRef }: Prop) {
               If you have any questions or would like to discuss a potential
               collaboration, please don't hesitate to get in touch. I'm excited
               to connect with you and explore how we can work together to bring
-              your ideas to life. Thank
+              your ideas to life.
             </p>
             <p>
-              you for visiting, and I hope you enjoy your time exploring my
-              portfolio!
+              Thank you for visiting, and I hope you enjoy your time exploring
+              my portfolio!
             </p>
           </div>
         </div>
