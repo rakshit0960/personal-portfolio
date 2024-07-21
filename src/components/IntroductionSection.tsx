@@ -34,7 +34,7 @@ export default function IntroductionSection({ contactSectionRef }: Prop) {
         <div className="w-[50%]">
           <img
             src={profileImage}
-            className="rounded-md border-black shadow-behind-shadow dark:shadow-[#a3a3a3]"
+            className="rounded-md border-black shadow-behind-shadow dark:shadow-[#1c1c1c]"
           ></img>
         </div>
       </div>
