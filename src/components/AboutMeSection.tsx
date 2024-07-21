@@ -5,7 +5,7 @@ import SkillsSection from "./SkillsSection";
 
 const AboutMeSection = forwardRef<HTMLDivElement, unknown>(function (_, ref) {
   return (
-    <div id="aboutSection" ref={ref}>
+    <div ref={ref}>
       <SectionWrapper name="About">
           <HomeSection />
           <SkillsSection />

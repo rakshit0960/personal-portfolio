@@ -20,8 +20,11 @@ export default {
         'dark-border-green': '#BCD4A4',
         'sage-green': '#BCD4A4',
         'ghost-white': '#F8F8FF',
-        'light-coral': '#F08080'
+        'light-coral': '#F08080',
       },
+      fontFamily: {
+        "mono-code": ["ui-monospace", 'Cascadia Code', 'Source Code Pro', "Menlo", "Consolas", 'DejaVu Sans Mono', "monospace"],
+      }
     },
   },
   plugins: [],

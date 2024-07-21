@@ -3,12 +3,12 @@ import { IconContext } from "react-icons";
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsTelephone } from 'react-icons/bs'
 import { FaGithub, FaLinkedin} from 'react-icons/fa6'
-import { useThemeContext } from "./contexts/ThemeContext";
+import { useTheme } from "./contexts/theme-provider";
 
 export default function ContactComponentsList() {
-  const { darkTheme } = useThemeContext()
+  const { theme: theme } = useTheme()
   return (
-    <IconContext.Provider value={{color: darkTheme ? 'white' : 'black', size: '1.2em'}}>
+    <IconContext.Provider value={{color: theme == 'dark' ? 'white' : 'black', size: '1.2em'}}>
         <div className="grid lg:gap-12 gap-4">
             <ContactComponent icon={<AiOutlineMail />} info="rakshit0960@gmail.com" link={'mailto:rakshit0960@gmail.com'} />
             <ContactComponent icon={<BsTelephone />} info="+919701011814" link={'tel:+919701011814'} />

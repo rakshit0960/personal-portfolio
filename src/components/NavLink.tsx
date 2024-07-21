@@ -2,9 +2,9 @@ interface prop extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   name: string;
 }
 
-export default function NavLink({ name, href, ...properties}: prop) {
+export default function NavLink({ name, ...properties}: prop) {
   return (
-    <a className="hover:font-semibold" {...properties}>
+    <a className="hover:font-semibold cursor-pointer" {...properties}>
       {name}
     </a>
   );
