@@ -1,11 +1,12 @@
+import { forwardRef } from "react";
 import ContactComponentsList from "./ContactComponentsList";
 import ContactForm from "./ContactForm";
 import SectionWrapper from "./SectionWrapper";
 
-export default function ContactSection() {
+const ContactSection = forwardRef<HTMLDivElement, unknown>(function(_, ref) {
   return (
     
-    <div id="ContactSection">
+    <div ref={ref}> 
       <SectionWrapper name="Contact Me">
 
         <div className="grid 2xl:grid-cols-6 grid-cols-1">
@@ -20,4 +21,6 @@ export default function ContactSection() {
       </SectionWrapper>
     </div>
   );
-}
+})
+
+export default ContactSection;

@@ -1,14 +1,17 @@
+import { forwardRef } from "react";
 import HomeSection from "./HomeSection";
 import SectionWrapper from "./SectionWrapper";
 import SkillsSection from "./SkillsSection";
 
-export default function AboutMeSection() {
+const AboutMeSection = forwardRef<HTMLDivElement, unknown>(function (_, ref) {
   return (
-    <div id="aboutSection">
+    <div id="aboutSection" ref={ref}>
       <SectionWrapper name="About">
           <HomeSection />
           <SkillsSection />
       </SectionWrapper>
     </div>
   );
-}
+});
+
+export default AboutMeSection;
