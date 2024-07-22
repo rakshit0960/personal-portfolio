@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "id": 3,
+            "id": 1,
             "preview": "https://github.com/rakshit0960/Chat-App/blob/main/ScreenShots/exampleChat.png?raw=true",
             "name": "ChatApp",
             "description": "Basic real-time chat application using Node.js, Socket.IO, React, and Tailwind CSS, containerized with Docker and hosted on an AWS EC2 instance. it provides a reliable and responsive chat experience.",
@@ -17,7 +17,7 @@
             "HostedLink": "https://snazzy-praline-f2e84a.netlify.app/"
         },
         {
-            "id": 1,
+            "id": 3,
             "preview": "https://github.com/rakshit0960/TicTacToe-AI/blob/main/ScreenShort/Hover.PNG?raw=true",
             "name": "ticTacToeAI",
             "description": "Tic Tac Toe site with HTML, CSS, and JavaScript, enabling users to play against an AI powered by the Minimax algorithm. The AI provides an optimal challenge, ensuring a competitive and engaging experience.",

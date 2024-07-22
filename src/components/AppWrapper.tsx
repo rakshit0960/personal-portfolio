@@ -5,7 +5,7 @@ interface Prop {
 
 export default function AppWrapper({ children }: Prop) {
     return (
-        <div className="dark:bg-black dark:text-dark-text font-mono-code">
+        <div className="dark:bg-black dark:text-white font-mono-code">
             <div className="lg:hidden">
                 {children}
             </div>
