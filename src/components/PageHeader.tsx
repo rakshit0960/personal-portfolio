@@ -11,7 +11,7 @@ export default function PageHeader(prop: Prop) {
   return (
     <>
       <div className="ml-4 lg:ml-6">
-        <SingleComponentWrapper name="Nav" className="text-2xl">
+        <SingleComponentWrapper name="Nav" className="text-2xl hidden sm:block">
           <NavBar {...prop} />
         </SingleComponentWrapper>
       </div>

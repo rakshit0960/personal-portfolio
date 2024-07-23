@@ -9,7 +9,7 @@ const skillsList: ISkill[] = data.skills;
 export default function SkillsSection() {
   return (
     <SectionWrapper name='Skills'>
-      <div className="flex">
+      <div className="flex flex-wrap gap-4 gap-x-8">
         {skillsList.map(skill => <SkillComponent skill={skill} key={skill.id}/>)}
       </div>
     </SectionWrapper>
