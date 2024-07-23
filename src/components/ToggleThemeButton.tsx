@@ -17,7 +17,7 @@ export default function ToggleThemeButton() {
     >
       <button
         onClick={toggleTheme}
-        className="w-20 ml-2 aspect-square border-black grid place-content-center border-2 rounded-lg dark:hover:white dark:border-[#D3D3D3] dark:hover:border-white"
+        className="bg-white dark:bg-black w-20 ml-2 aspect-square grid place-content-center border shadow-big-shadow rounded-lg dark:hover:white dark:border-[#D3D3D3] dark:hover:border-white border-gray-400"
       >
         {theme == 'dark' ? <BsMoon /> : <BsSun />}
       </button>

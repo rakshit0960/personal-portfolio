@@ -30,7 +30,7 @@ export default function ContactForm() {
               name="firstName"
               required={true}
               placeholder="firstName"
-              className="border-2 border-black dark:border-gray-400 p-2 font-semibold w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:focus:bg-transparent"
+              className="text-xl font-mono rounded-lg border border-black dark:border-gray-400 p-2 w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:focus:bg-transparent"
             />
           </label>
           <label>
@@ -40,7 +40,7 @@ export default function ContactForm() {
               name="lastName"
               required={true}
               placeholder="lastName"
-              className="border-2 border-black dark:border-gray-400 p-2 font-semibold w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:focus:bg-transparent"
+              className="text-xl font-mono rounded-lg border border-black dark:border-gray-400 p-2 w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:focus:bg-transparent"
             />
           </label>
         </div>
@@ -53,7 +53,7 @@ export default function ContactForm() {
             required={true}
             placeholder="Email"
             autoComplete="email"
-            className="border-2 border-black dark:border-gray-400 p-2 font-semibold w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:focus:bg-transparent"
+            className="text-xl font-mono rounded-lg border border-black dark:border-gray-400 p-2 w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:focus:bg-transparent"
           />
         </label>
         <label>
@@ -64,14 +64,14 @@ export default function ContactForm() {
             placeholder="Message"
             rows={6}
             cols={40}
-            className="border-2 border-black dark:border-gray-400 resize-none p-2 w-full font-semibold focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent"
+            className="text-xl font-mono rounded-lg border border-black dark:border-gray-400 resize-none p-2 w-full focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent"
           ></textarea>
         </label>
 
         {!isLoading ? (
           <button
             type="submit"
-            className="border-2 border-black p-2 mt-4 rounded-xl hover:border-gray-500 focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:hover:bg-white dark:hover:text-black dark:border-white"
+            className="hover:bg-black hover:text-white transition-all border-2 border-black p-2 mt-4 rounded-xl focus:outline-none focus:ring-1 focus:ring-black dark:bg-transparent dark:hover:bg-white dark:hover:text-black dark:border-white"
           >
             Send
           </button>

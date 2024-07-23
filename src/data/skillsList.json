@@ -1,44 +1,44 @@
 {
-    "skills": [
-        {
-            "id": 1,
-            "name": "HTML",
-            "level": 95
-        },
-        {
-            "id": 2,
-            "name": "CSS",
-            "level": 90
-        },
-        {
-            "id": 3,
-            "name": "TypeScript",
-            "level": 90
-        },
-        {
-            "id": 4,
-            "name": "ReactJs",
-            "level": 90
-        },
-        {
-            "id": 5,
-            "name": "Tailwind",
-            "level": 80
-        },
-        {
-            "id": 6,
-            "name": "NodeJS",
-            "level": 90
-        },
-        {
-            "id": 7,
-            "name": "docker",
-            "level": 30
-        }, 
-        {
-            "id": 8,
-            "name": "AWS",
-            "level": 30
-        }
-    ]
+  "skills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+    },
+    {
+      "id": 3,
+      "name": "TypeScript",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+    },
+    {
+      "id": 4,
+      "name": "ReactJs",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+    },
+    {
+      "id": 5,
+      "name": "Tailwind",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+    },
+    {
+      "id": 6,
+      "name": "NodeJS",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+    },
+    {
+      "id": 7,
+      "name": "docker",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+    },
+    {
+      "id": 8,
+      "name": "AWS",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+    }
+  ]
 }
