@@ -41,8 +41,8 @@ export default function NavLink({
     <div className="relative">
       <a
         className={
-          "hover:text-5xl after:absolute after:origin-bottom-left after:duration-700 after:w-full dark:after:bg-white after:scale-x-0 after:bottom-0 hover:after:scale-x-100 after:transition-all after:h-[2px] after:left-0 after:bg-red-700 transition-all cursor-pointer " +
-          "font-mono " + className
+          "hover:text-5xl after:absolute after:origin-bottom-left after:duration-700 after:w-full dark:after:bg-white after:scale-x-0 after:bottom-0 hover:after:scale-x-100 after:transition-all after:h-[2px] after:left-0 after:bg-red-700 transition-all cursor-pointer font-mono " +
+          className
         }
         {...properties}
         onMouseOver={handelHover}

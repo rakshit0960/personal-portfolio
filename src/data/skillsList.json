@@ -39,6 +39,11 @@
       "id": 8,
       "name": "AWS",
       "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+    },
+    {
+      "id": 8,
+      "name": "NextJs",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
     }
   ]
 }
