@@ -1,14 +1,9 @@
 {
   "skills": [
     {
-      "id": 1,
-      "name": "HTML",
-      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-    },
-    {
-      "id": 2,
-      "name": "CSS",
-      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+      "id": 4,
+      "name": "ReactJs",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
     },
     {
       "id": 3,
@@ -16,14 +11,19 @@
       "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
     },
     {
-      "id": 4,
-      "name": "ReactJs",
-      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-    },
-    {
       "id": 5,
       "name": "Tailwind",
       "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+    },
+    {
+      "id": 9,
+      "name": "Zustand",
+      "imageSrc": "public/zustand.png"
+    },
+    {
+      "id": 9,
+      "name": "NextJs",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
     },
     {
       "id": 6,
@@ -39,11 +39,6 @@
       "id": 8,
       "name": "AWS",
       "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-    },
-    {
-      "id": 8,
-      "name": "NextJs",
-      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
     }
-  ]
-}
+    ]
+  }

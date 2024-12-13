@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, MotionProps } from 'framer-motion';
 
 interface prop extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   name: string;
@@ -39,16 +40,18 @@ export default function NavLink({
 
   return (
     <div className="relative">
-      <a
+      <motion.a
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
         className={
-          "hover:text-5xl after:absolute after:origin-bottom-left after:duration-700 after:w-full dark:after:bg-white after:scale-x-0 after:bottom-0 hover:after:scale-x-100 after:transition-all after:h-[2px] after:left-0 after:bg-red-700 transition-all cursor-pointer font-mono " +
+          "after:absolute after:origin-bottom-left after:duration-700 after:w-full dark:after:bg-white after:scale-x-0 after:bottom-0 hover:after:scale-x-100 after:transition-all after:h-[2px] after:left-0 after:bg-red-700 transition-all cursor-pointer font-mono " +
           className
         }
-        {...properties}
+        {...(properties as MotionProps)}
         onMouseOver={handelHover}
       >
         {name}
-      </a>
+      </motion.a>
     </div>
   );
 }

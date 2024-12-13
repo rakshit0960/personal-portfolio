@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        'fira-mono': ['Fira Mono', 'monospace'],
+        'source-code': ['Source Code Pro', 'monospace'],
+        'fira': ['Fira Code', 'monospace'],
+      },
       aspectRatio: {
         '16/11': '16 / 10',
       },spacing: {
@@ -22,16 +26,12 @@ export default {
         'ghost-white': '#F8F8FF',
         'light-coral': '#F08080',
       },
-      fontFamily: {
-        "mono-code": ["ui-monospace", 'Cascadia Code', 'Source Code Pro', "Menlo", "Consolas", 'DejaVu Sans Mono', "monospace"],
-      },
       boxShadow: {
         "behind-shadow": "24px 24px 0px 0px rgba(0,0,0,1);",
         "big-shadow": "2.8px 2.8px 2.2px rgba(0, 0, 0, 0.07), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.05), 12.5px 12.5px 10px rgba(0, 0, 0, 0.042), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.035), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.028), 100px 100px 80px rgba(0, 0, 0, 0.02)",
-     
+
       }
     },
   },
   plugins: [],
 }
-

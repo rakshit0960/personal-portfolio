@@ -3,10 +3,10 @@ import ContactComponentsList from "./ContactComponentsList";
 import ContactForm from "./ContactForm";
 import SectionWrapper from "./SectionWrapper";
 
-const ContactSection = forwardRef<HTMLDivElement, unknown>(function(_, ref) {
+const ContactSection = forwardRef<HTMLDivElement, unknown>(function (_, ref) {
   return (
-    
-    <div ref={ref}> 
+
+    <div ref={ref}>
       <SectionWrapper name="Contact Me">
 
         <div className="grid 2xl:grid-cols-6 grid-cols-1">

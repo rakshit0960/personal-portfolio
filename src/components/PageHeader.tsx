@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 import SingleComponentWrapper from "./SingleComponentWrapper";
 
 type Prop = {
-  aboutMeSectionRef: React.MutableRefObject<HTMLDivElement | null> 
+  aboutMeSectionRef: React.MutableRefObject<HTMLDivElement | null>
   projectsSectionRef: React.MutableRefObject<HTMLDivElement | null>
   contactSectionRef: React.MutableRefObject<HTMLDivElement | null>
 }

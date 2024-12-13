@@ -4,33 +4,37 @@
             "id": 1,
             "preview": "https://github.com/rakshit0960/Chat-App/blob/main/ScreenShots/exampleChat.png?raw=true",
             "name": "ChatApp",
-            "description": "Basic real-time chat application using Node.js, Socket.IO, React, and Tailwind CSS, containerized with Docker and hosted on an AWS EC2 instance. it provides a reliable and responsive chat experience.",
+            "description": "Real-time chat application built with Node.js and Socket.IO. Features include instant messaging, Docker containerization, and AWS EC2 deployment.",
             "repositoryLink": "https://github.com/rakshit0960/Chat-App",
-            "HostedLink": "http://chat-app.us.to/"
+            "HostedLink": "http://chat-app.us.to/",
+            "techStack": ["React", "Node.js", "Socket.IO", "Docker", "AWS"]
         },
         {
             "id": 2,
             "preview": "https://github.com/rakshit0960/Sorting-Algorithm-Visualizer/blob/main/screenShots/Screenshot2.png?raw=true",
-            "name": "SortingAlgoVisualizer",
-            "description": "Sorting algorithm visualizer using React and Tailwind CSS, providing an interactive and educational tool to illustrate how various sorting algorithms work. The visualizer supports multiple algorithms and features dynamic animations.",
+            "name": "Sorting Visualizer",
+            "description": "Interactive tool for visualizing sorting algorithms in action. Features multiple algorithms and dynamic animations for educational purposes.",
             "repositoryLink": "https://github.com/rakshit0960/Sorting-Algorithm-Visualizer",
-            "HostedLink": "https://snazzy-praline-f2e84a.netlify.app/"
+            "HostedLink": "https://snazzy-praline-f2e84a.netlify.app/",
+            "techStack": ["React", "TailwindCSS", "JavaScript"]
         },
         {
             "id": 3,
             "preview": "https://github.com/rakshit0960/TicTacToe-AI/blob/main/ScreenShort/Hover.PNG?raw=true",
-            "name": "ticTacToeAI",
-            "description": "Tic Tac Toe site with HTML, CSS, and JavaScript, enabling users to play against an AI powered by the Minimax algorithm. The AI provides an optimal challenge, ensuring a competitive and engaging experience.",
+            "name": "TicTacToe AI",
+            "description": "Unbeatable Tic Tac Toe game powered by the Minimax algorithm. Challenge yourself against an AI that makes optimal moves every time.",
             "repositoryLink": "https://github.com/rakshit0960/TicTacToe-AI",
-            "HostedLink": "https://luxury-capybara-27a3e2.netlify.app/"
+            "HostedLink": "https://luxury-capybara-27a3e2.netlify.app/",
+            "techStack": ["HTML", "CSS", "JavaScript", "AI"]
         },
         {
             "id": 4,
             "preview": "https://github.com/rakshit0960/realTimeObjectDetectionAndTracking/blob/main/image.png?raw=true",
-            "name": "RealTime Object Detection And Tracking",
-            "description": "Object detection and tracking system using YOLOv8, achieving real-time performance and high accuracy in identifying and following multiple objects in dynamic scenes.",
+            "name": "Object Detection",
+            "description": "Real-time object detection system using YOLOv8. Tracks multiple objects simultaneously with high accuracy and performance.",
             "repositoryLink": "https://github.com/rakshit0960/realTimeObjectDetectionAndTracking",
-            "HostedLink": "https://github.com/rakshit0960/realTimeObjectDetectionAndTracking"
+            "HostedLink": "https://github.com/rakshit0960/realTimeObjectDetectionAndTracking",
+            "techStack": ["Python", "YOLOv8", "Computer Vision"]
         }
     ]
 }

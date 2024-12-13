@@ -6,10 +6,10 @@ const projectsList: IProject[] = data.projects;
 
 export default function ProjectsList() {
   return (
-    <div className='grid xl:grid-cols-2 2xl:grid-cols-3 gap-4 w-2/3 xl:w-full'>
-        {
-          projectsList.map(project => <ProjectCard project={project} key={project.id} />)
-        }
+    <div className="grid xl:grid-cols-2 2xl:grid-cols-3 gap-6">
+      {projectsList.map(project => (
+        <ProjectCard project={project} key={project.id} />
+      ))}
     </div>
   )
 }

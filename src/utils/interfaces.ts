@@ -5,7 +5,8 @@ export interface IProject {
     description: string
     repositoryLink: string
     HostedLink: string
-} 
+    techStack: string[]
+}
 
 export interface ISkill {
     id: number

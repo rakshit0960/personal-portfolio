@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoDocumentAttachOutline } from "react-icons/io5";
+import { motion } from 'framer-motion';
 import NavIconButton from "./NavIconButton";
 import NavLink from "./NavLink";
 import ToggleThemeButton from "./ToggleThemeButton";
@@ -16,7 +17,12 @@ export default function NavBar({
   contactSectionRef,
 }: Prop) {
   return (
-    <nav className="flex mt-4 lg:mt-0">
+    <motion.nav
+      className="flex mt-4 lg:mt-0"
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ type: 'spring', stiffness: 75 }}
+    >
       <div className="py-2 w-full h-full gap-1 rounded-md lg:grid lg:grid-cols-4 place-content-center place-items-center border border-gray-400 dark:border-light-coral  lg:h-20 text-2xl select-none shadow-big-shadow">
         <NavLink
           className="hidden lg:block"
@@ -49,6 +55,6 @@ export default function NavBar({
         </div>
       </div>
       <ToggleThemeButton />
-    </nav>
+    </motion.nav>
   );
 }
