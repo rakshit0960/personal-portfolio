@@ -17,18 +17,13 @@
     },
     {
       "id": 9,
-      "name": "Zustand",
-      "imageSrc": "public/zustand.png"
-    },
-    {
-      "id": 9,
       "name": "NextJs",
       "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
     },
     {
       "id": 6,
       "name": "NodeJS",
-      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+      "imageSrc":"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
     },
     {
       "id": 7,
@@ -39,6 +34,26 @@
       "id": 8,
       "name": "AWS",
       "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+    },
+    {
+      "id": 10,
+      "name": "Java",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg "
+    },
+    {
+      "id": 11,
+      "name": "Python",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+    },
+    {
+      "id": 12,
+      "name": "MongoDB",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+    },
+    {
+      "id": 13,
+      "name": "PostgreSQL",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
     }
-    ]
-  }
+  ]
+}
