@@ -1,20 +1,30 @@
+import { RefObject } from "react";
 import NavBar from "./NavBar";
-import SingleComponentWrapper from "./SingleComponentWrapper";
+import { motion } from 'framer-motion';
 
 type Prop = {
-  aboutMeSectionRef: React.MutableRefObject<HTMLDivElement | null>
-  projectsSectionRef: React.MutableRefObject<HTMLDivElement | null>
-  contactSectionRef: React.MutableRefObject<HTMLDivElement | null>
-}
+  aboutMeSectionRef: RefObject<HTMLDivElement>;
+  projectsSectionRef: RefObject<HTMLDivElement>;
+  contactSectionRef: RefObject<HTMLDivElement>;
+};
 
-export default function PageHeader(prop: Prop) {
+export default function PageHeader({
+  aboutMeSectionRef,
+  projectsSectionRef,
+  contactSectionRef,
+}: Prop) {
   return (
-    <>
-      <div className="ml-4 lg:ml-6">
-        <SingleComponentWrapper name="Nav" className="text-2xl hidden sm:block">
-          <NavBar {...prop} />
-        </SingleComponentWrapper>
-      </div>
-    </>
+    <motion.header
+      className="px-5 container mx-auto max-w-5xl"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <NavBar
+        aboutMeSectionRef={aboutMeSectionRef}
+        projectsSectionRef={projectsSectionRef}
+        contactSectionRef={contactSectionRef}
+      />
+    </motion.header>
   );
 }

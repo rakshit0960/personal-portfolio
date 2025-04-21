@@ -14,13 +14,20 @@ export default function ToggleThemeButton() {
 
   return (
     <IconContext.Provider
-      value={{ color: theme == 'dark' ? "white" : "black", size: "1.6em" }}
+      value={{ color: theme == 'dark' ? "#10b981" : "#f59e0b", size: "1.2em" }}
     >
       <motion.button
         onClick={toggleTheme}
-        className="bg-white dark:bg-black w-20 ml-2 aspect-square grid place-content-center border shadow-big-shadow rounded-lg dark:hover:white dark:border-[#D3D3D3] dark:hover:border-white border-gray-400"
+        className="flex items-center justify-center w-12 h-12 rounded-lg
+        border border-gray-300 dark:border-gray-700
+        bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm
+        shadow-sm dark:shadow-md dark:shadow-black/20
+        hover:shadow-md dark:hover:shadow-lg dark:hover:shadow-black/30
+        hover:border-gray-400 dark:hover:border-gray-600
+        transition-all duration-300"
         whileTap={{ scale: 0.9, rotate: 15 }}
         transition={{ type: 'spring', stiffness: 300 }}
+        aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
       >
         {theme == 'dark' ? <BsMoon /> : <BsSun />}
       </motion.button>

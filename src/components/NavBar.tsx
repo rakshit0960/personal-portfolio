@@ -5,10 +5,12 @@ import { motion } from 'framer-motion';
 import NavIconButton from "./NavIconButton";
 import NavLink from "./NavLink";
 import ToggleThemeButton from "./ToggleThemeButton";
+import { RefObject } from "react";
+
 type Prop = {
-  aboutMeSectionRef: React.MutableRefObject<HTMLDivElement | null>;
-  projectsSectionRef: React.MutableRefObject<HTMLDivElement | null>;
-  contactSectionRef: React.MutableRefObject<HTMLDivElement | null>;
+  aboutMeSectionRef: RefObject<HTMLDivElement>;
+  projectsSectionRef: RefObject<HTMLDivElement>;
+  contactSectionRef: RefObject<HTMLDivElement>;
 };
 
 export default function NavBar({
@@ -18,42 +20,50 @@ export default function NavBar({
 }: Prop) {
   return (
     <motion.nav
-      className="flex mt-4 lg:mt-0"
+      className="flex items-center gap-4 mt-6 lg:mt-0 px-4"
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: 'spring', stiffness: 75 }}
     >
-      <div className="py-2 w-full h-full gap-1 rounded-md lg:grid lg:grid-cols-4 place-content-center place-items-center border border-gray-400 dark:border-light-coral  lg:h-20 text-2xl select-none shadow-big-shadow">
-        <NavLink
-          className="hidden lg:block"
-          name="About"
-          onClick={() => aboutMeSectionRef.current?.scrollIntoView()}
-        />
-        <NavLink
-          className="hidden lg:block"
-          name="Projects"
-          onClick={() => projectsSectionRef.current?.scrollIntoView()}
-        />
-        <NavLink
-          className="hidden lg:block"
-          name="Contact"
-          onClick={() => contactSectionRef.current?.scrollIntoView()}
-        />
-        <div className="flex gap-3 justify-around">
-          <NavIconButton
-            src="https://docs.google.com/document/d/1axLDuGj3sel9g2F_spL2sJpp0oCNJGNDNfrqW1KU7h0/edit?usp=sharing"
-            Icon={<IoDocumentAttachOutline />}
-          />
-          <NavIconButton
-            src="https://github.com/rakshit0960"
-            Icon={<FaGithub />}
-          />
-          <NavIconButton
-            src="https://linkedin.com/in/rakshit0960"
-            Icon={<FaLinkedin />}
-          />
+      <div className="flex-1 py-4 rounded-lg border border-gray-300 dark:border-gray-700
+        shadow-sm dark:shadow-md dark:shadow-black/20 bg-white/80 dark:bg-gray-900/80
+        backdrop-blur-sm">
+        <div className="grid lg:grid-cols-[1fr,auto] gap-4">
+          <div className="hidden lg:flex items-center justify-center">
+            <NavLink
+              name="About"
+              onClick={() => aboutMeSectionRef.current?.scrollIntoView({ behavior: 'smooth' })}
+            />
+            <NavLink
+              name="Projects"
+              onClick={() => projectsSectionRef.current?.scrollIntoView({ behavior: 'smooth' })}
+            />
+            <NavLink
+              name="Contact"
+              onClick={() => contactSectionRef.current?.scrollIntoView({ behavior: 'smooth' })}
+            />
+          </div>
+
+          <div className="flex justify-center lg:justify-end items-center gap-3 px-4">
+            <NavIconButton
+              src="https://docs.google.com/document/d/1axLDuGj3sel9g2F_spL2sJpp0oCNJGNDNfrqW1KU7h0/edit?usp=sharing"
+              Icon={<IoDocumentAttachOutline />}
+              label="Resume"
+            />
+            <NavIconButton
+              src="https://github.com/rakshit0960"
+              Icon={<FaGithub />}
+              label="GitHub"
+            />
+            <NavIconButton
+              src="https://linkedin.com/in/rakshit0960"
+              Icon={<FaLinkedin />}
+              label="LinkedIn"
+            />
+          </div>
         </div>
       </div>
+
       <ToggleThemeButton />
     </motion.nav>
   );

@@ -14,7 +14,7 @@ type ThemeProviderState = {
 }
 
 const initialState: ThemeProviderState = {
-  theme: "light",
+  theme: "system",
   setTheme: () => null,
 }
 
@@ -57,7 +57,7 @@ export function ThemeProvider({
   };
 
   return (
-    <ThemeProviderContext.Provider  value={value} {...props}>
+    <ThemeProviderContext.Provider value={value} {...props}>
       {children}
     </ThemeProviderContext.Provider>
   );

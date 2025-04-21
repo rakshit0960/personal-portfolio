@@ -16,11 +16,6 @@
       "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
     },
     {
-      "id": 9,
-      "name": "NextJs",
-      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
-    },
-    {
       "id": 6,
       "name": "NodeJS",
       "imageSrc":"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
@@ -54,6 +49,11 @@
       "id": 13,
       "name": "PostgreSQL",
       "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+    },
+    {
+      "id": 9,
+      "name": "NextJs",
+      "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
     }
   ]
 }

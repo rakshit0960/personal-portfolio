@@ -2,15 +2,33 @@
     "projects": [
         {
             "id": 1,
-            "preview": "https://github.com/rakshit0960/Chat-App/blob/main/ScreenShots/exampleChat.png?raw=true",
-            "name": "ChatApp",
-            "description": "Real-time chat application built with Node.js and Socket.IO. Features include instant messaging, Docker containerization, and AWS EC2 deployment.",
-            "repositoryLink": "https://github.com/rakshit0960/Chat-App",
-            "HostedLink": "http://chat-app.us.to/",
-            "techStack": ["React", "Node.js", "Socket.IO", "Docker", "AWS"]
+            "preview": "/screenshots/peer-talk.png",
+            "name": "PeerTalk - Real-Time Communication Platform",
+            "description": "Engineered real-time messaging system using Socket.IO with typing indicators and read receipts. peer-to-peer video calls with WebRTC, secure media sharing with AWS S3, and custom OAuth 2.0 authentication flow.",
+            "repositoryLink": "https://github.com/rakshit0960/PeerTalk",
+            "HostedLink": "https://peertalk-66wr.onrender.com/",
+            "techStack": ["React", "Node.js", "Express", "Socket.IO", "WebRTC", "Docker", "AWS S3", "Prisma ORM", "JWT"]
         },
         {
             "id": 2,
+            "preview": "/screenshots/onlineIDE.png",
+            "name": "Online Code Compiler",
+            "description": "Engineered a secure multi-language code execution platform using Next.js, Docker, and Monaco Editor. Implemented secure isolation with Dockerode for container orchestration and built feature-rich editor with syntax highlighting, themes, and real-time execution.",
+            "repositoryLink": "https://github.com/rakshit0960/OnlineCodeIDE",
+            "HostedLink": "",
+            "techStack": ["Next.js", "Docker", "Monaco Editor", "Prisma ORM", "PostgreSQL", "TypeScript"]
+        },
+        {
+            "id": 4,
+            "preview": "/screenshots/cryptoWallet.png",
+            "name": "Blockchain Wallet Application",
+            "description": "Developed Solana blockchain wallet supporting transaction processing, balance tracking, and testnet airdrops. Used Next.js 13 with App Router for enhanced performance and SEO. Optimized deployment with Docker and implemented secure keypair management system.",
+            "repositoryLink": "https://github.com/rakshit0960/Crypto-Wallet",
+            "HostedLink": "https://crypto-wallet-sepia.vercel.app/",
+            "techStack": ["Next.js", "TypeScript", "Solana Blockchain", "Docker", "Tailwind CSS"]
+        },
+        {
+            "id": 5,
             "preview": "https://github.com/rakshit0960/Sorting-Algorithm-Visualizer/blob/main/screenShots/Screenshot2.png?raw=true",
             "name": "Sorting Visualizer",
             "description": "Interactive tool for visualizing sorting algorithms in action. Features multiple algorithms and dynamic animations for educational purposes.",
@@ -19,16 +37,16 @@
             "techStack": ["React", "TailwindCSS", "JavaScript"]
         },
         {
-            "id": 3,
+            "id": 6,
             "preview": "https://github.com/rakshit0960/TicTacToe-AI/blob/main/ScreenShort/Hover.PNG?raw=true",
             "name": "TicTacToe AI",
             "description": "Unbeatable Tic Tac Toe game powered by the Minimax algorithm. Challenge yourself against an AI that makes optimal moves every time.",
             "repositoryLink": "https://github.com/rakshit0960/TicTacToe-AI",
             "HostedLink": "https://luxury-capybara-27a3e2.netlify.app/",
-            "techStack": ["HTML", "CSS", "JavaScript", "AI"]
+            "techStack": ["HTML", "CSS", "JavaScript"]
         },
         {
-            "id": 4,
+            "id": 7,
             "preview": "https://github.com/rakshit0960/realTimeObjectDetectionAndTracking/blob/main/image.png?raw=true",
             "name": "Object Detection",
             "description": "Real-time object detection system using YOLOv8. Tracks multiple objects simultaneously with high accuracy and performance.",

@@ -39,12 +39,12 @@ export default function NavLink({
   };
 
   return (
-    <div className="relative">
+    <div className="relative px-3">
       <motion.a
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className={
-          "after:absolute after:origin-bottom-left after:duration-700 after:w-full dark:after:bg-white after:scale-x-0 after:bottom-0 hover:after:scale-x-100 after:transition-all after:h-[2px] after:left-0 after:bg-red-700 transition-all cursor-pointer font-mono " +
+          "relative font-mono text-lg cursor-pointer text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-emerald-400 transition-colors after:absolute after:w-0 after:h-[1px] after:bottom-0 after:left-0 dark:after:bg-emerald-400 after:bg-gray-800 hover:after:w-full after:transition-all after:duration-300 " +
           className
         }
         {...(properties as MotionProps)}
