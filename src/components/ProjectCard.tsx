@@ -66,7 +66,7 @@ export default function ProjectCard({ project }: { project: IProject }) {
       <motion.div
         initial={{ boxShadow: "0 0 0 0 rgba(0, 0, 0, 0)" }}
         whileHover={{
-          boxShadow: "0 10px 30px -15px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+          // boxShadow: "0 10px 3 0px -15px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
           transition: { duration: 0.3 }
         }}
         className="h-full"
